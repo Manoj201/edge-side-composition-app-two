@@ -5,7 +5,7 @@ phases:
     commands:
       - aws cloudfront create-invalidation \
         --distribution-id EHIWKYBD96BJ8 \
-          --paths '/*'
+        --paths '/*'
   pre_build:
     commands:
       - npm install
