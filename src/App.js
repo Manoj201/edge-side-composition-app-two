@@ -16,7 +16,6 @@ function App() {
       <button onClick={handleClick}>
         Navigate to First App
       </button>
-      <span>Updated</span>
     </div>
   );
 }
