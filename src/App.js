@@ -1,23 +1,20 @@
+import "./App.css";
 
-import Cookies from 'universal-cookie';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "pages/Home.page";
 
 function App() {
-
-  const handleClick = () => {
-    const cookies = new Cookies();
-    cookies.set('version', 'oldApp', { path: '/' });
-    window.location.reload();
-  }
-  
-  return (
-    <div className="App">
-      <h2>Version - {process.env.REACT_APP_VERSION}</h2>
-      <button onClick={handleClick}>
-        Navigate to First App
-      </button>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router basename="/payments">
+				<Switch>
+					<Route path="/">
+						<HomePage />
+					</Route>
+				</Switch>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
