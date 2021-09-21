@@ -8,7 +8,7 @@ function App() {
 		<div className="App">
 			<Router basename="/payments">
 				<Switch>
-					<Route path="/">
+					<Route path="/dashbord">
 						<HomePage />
 					</Route>
 				</Switch>
