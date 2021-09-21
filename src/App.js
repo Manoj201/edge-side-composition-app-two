@@ -6,9 +6,9 @@ import HomePage from "pages/Home.page";
 function App() {
 	return (
 		<div className="App">
-			<Router basename="/payments">
+			<Router >
 				<Switch>
-					<Route path="/dashbord">
+					<Route path="/">
 						<HomePage />
 					</Route>
 				</Switch>
