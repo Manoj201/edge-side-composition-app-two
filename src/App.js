@@ -6,7 +6,7 @@ import PaymentPage from 'pages/PaymentPage'
 
 function App() {
 	return (
-			<BrowserRouter basename="/app">
+			<BrowserRouter >
 				<Switch>
 					<Route exact path="/" component={HomePage}/>
 					<Route exact path="/payment" component={PaymentPage}/>
