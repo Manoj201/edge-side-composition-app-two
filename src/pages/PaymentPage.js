@@ -5,7 +5,7 @@ const PaymentPage = () => {
 	const handleClick = () => {
 		const cookies = new Cookies();
 		cookies.set("version", "home", { path: "/" });
-		window.location.reload();
+		window.location.href = "/";
 	};
 	return (
 		<div>
